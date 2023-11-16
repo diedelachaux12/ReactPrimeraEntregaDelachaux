@@ -1,0 +1,84 @@
+/* Estilos para NavBar.js */
+
+/* Navbar principal */
+.navbar {
+    background-color: black;
+  }
+  
+  /* Estilos del logo */
+  .navbar-brand img {
+    height: 100%;
+  }
+  
+  /* Estilos para los elementos del menú */
+ 
+.navbar-nav {
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto; /* Alinea los elementos a la derecha */
+  }
+  
+  
+  /* Estilos para los enlaces del menú */
+  .nav-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Estilos para el botón personalizado */
+  .custom-button {
+    background: black;
+    color: white;
+  }
+  
+  /* Estilos para el ícono de barras (solo en pantallas pequeñas) */
+  @media (max-width: 768px) {
+    /* Navbar en modo responsivo */
+    .navbar-toggler-icon {
+      color: white;
+    }
+  
+    /* Alineación y estilos específicos para el modo responsivo */
+    .navbar-collapse {
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    /* Estilos para el menú desplegable en pantallas pequeñas */
+    .navbar-nav {
+      position: fixed;
+      display: none;
+      top: 45px;
+      right: 0;
+      width: 240px;
+      height: 100vh;
+      background-color: rgb(0, 0, 0);
+      flex-direction: column;
+      justify-content: start;
+      text-decoration: none;
+      align-items: center;
+    }
+  
+    /* Estilos para los ítems del menú desplegable */
+    .navbar-nav .nav-item {
+      display: none;
+    }
+  
+    /* Mostrar el menú desplegable al hacer hover sobre el ícono de barras */
+    .navbar-toggler:hover + .navbar-nav {
+      display: flex;
+      top: 0;
+    }
+  
+    /* Mostrar los ítems del menú desplegable al hacer hover sobre ellos o sobre el ícono de Shop */
+    .nav-link:hover + .dropdown-menu, .dropdown:hover .dropdown-menu {
+      display: flex;
+    }
+  }
+  

@@ -1,0 +1,11 @@
+/* CartWidget.css */
+.cart-widget {
+    display: flex;
+    align-items: center; /* Centra verticalmente en el contenedor */
+    justify-content: center; /* Centra horizontalmente en el contenedor */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
