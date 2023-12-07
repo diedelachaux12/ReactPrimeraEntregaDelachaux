@@ -27,12 +27,12 @@
   /* Estilos para los enlaces del menú */
   .nav-link {
     text-decoration: none;
-    color: white;
+    color: white !important;
   }
   
   /* Estilos para el botón personalizado */
   .custom-button {
-    background: black;
+    background: rgb(255, 255, 255);
     color: white;
   }
   

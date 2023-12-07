@@ -1,15 +1,23 @@
+// App.js
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
+import './App.css'; 
+import './components/NavBar.css'
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <div className="custom-app-container">
       <NavBar />
-      <ItemListContainer greeting="¡Bienvenido a nuestra tienda!" />
+      <Routes>
+        <Route path="/" element={<ItemListContainer greeting="¡Bienvenido a Naiki Store!" />} />
+        <Route path="/category/:id" element={<ItemListContainer />} />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
